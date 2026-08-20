@@ -7,6 +7,7 @@
     <title>이윤지 | Business · Data · AI</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="snapshot.css">
 </head>
 
 <body>
@@ -18,6 +19,7 @@
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#snapshot">Snapshot</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
         </div>
@@ -103,10 +105,9 @@
                 </div>
 
                 <p style="margin-top:22px;">
-                    <a href="projects/customer-churn/README.md"
-                       target="_blank"
+                    <a href="#snapshot"
                        style="color:#111; font-weight:600; text-decoration:none;">
-                        프로젝트 보기 →
+                        Snapshot 보기 →
                     </a>
                 </p>
 
@@ -214,10 +215,77 @@
     </section>
 
 
+    <!-- Project Snapshot -->
+    <section id="snapshot" class="snapshot-section">
+
+        <p class="section-label">03 — PROJECT SNAPSHOT</p>
+
+        <div class="snapshot-header">
+            <h2>Customer Churn<br>&amp; CLTV Analysis</h2>
+            <p>
+                이탈 가능성을 예측하는 데서 끝내지 않고, 고객가치와 결합해
+                실제로 먼저 관리해야 할 고객을 구분했습니다.
+            </p>
+        </div>
+
+        <div class="snapshot-metrics">
+            <article class="snapshot-metric">
+                <span>TOTAL CUSTOMERS</span>
+                <strong>7,043</strong>
+                <small>통신 서비스 고객</small>
+            </article>
+            <article class="snapshot-metric">
+                <span>CHURNED CUSTOMERS</span>
+                <strong>1,869</strong>
+                <small>전체 고객 중 이탈</small>
+            </article>
+            <article class="snapshot-metric">
+                <span>CHURN RATE</span>
+                <strong>26.54%</strong>
+                <small>분석 대상 기준</small>
+            </article>
+            <article class="snapshot-metric">
+                <span>FEATURES</span>
+                <strong>33</strong>
+                <small>고객·계약·서비스 변수</small>
+            </article>
+        </div>
+
+        <div class="snapshot-content">
+            <article class="snapshot-card">
+                <span>ANALYSIS FLOW</span>
+                <h3>데이터에서 관리 우선순위까지</h3>
+                <ol class="snapshot-list">
+                    <li><b>01</b><span>데이터 타입과 결측치를 확인하고 Total Charges를 숫자형으로 정리했습니다.</span></li>
+                    <li><b>02</b><span>계약 유형, 가입기간, 월 요금 등 주요 변수와 이탈의 관계를 탐색했습니다.</span></li>
+                    <li><b>03</b><span>Logistic Regression과 Random Forest로 고객별 이탈 확률을 비교했습니다.</span></li>
+                    <li><b>04</b><span>이탈 확률과 CLTV를 결합해 고객 관리 우선순위를 구성했습니다.</span></li>
+                </ol>
+            </article>
+
+            <article class="snapshot-card">
+                <span>CUSTOMER SEGMENTS</span>
+                <h3>Risk × Value</h3>
+                <div class="segment-grid">
+                    <div class="segment priority"><strong>High Risk · High Value</strong><p>이탈 가능성과 고객가치가 모두 높아 최우선 관리가 필요한 고객</p></div>
+                    <div class="segment"><strong>High Risk · Low Value</strong><p>이탈 가능성은 높지만 고객가치는 상대적으로 낮은 고객</p></div>
+                    <div class="segment"><strong>Low Risk · High Value</strong><p>이탈 위험은 낮지만 장기적으로 유지해야 할 우량 고객</p></div>
+                    <div class="segment"><strong>Low Risk · Low Value</strong><p>상대적으로 관리 우선순위가 낮은 고객</p></div>
+                </div>
+                <div class="snapshot-actions">
+                    <a href="projects/customer-churn/README.md" target="_blank">전체 분석 보기 →</a>
+                    <a href="#projects">프로젝트 목록</a>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+
     <!-- Experience -->
     <section id="experience" class="section">
 
-        <p class="section-label">03 — EXPERIENCE</p>
+        <p class="section-label">04 — EXPERIENCE</p>
 
         <h2>Experience</h2>
 
@@ -245,7 +313,7 @@
     <!-- Skills -->
     <section id="skills" class="section">
 
-        <p class="section-label">04 — SKILLS</p>
+        <p class="section-label">05 — SKILLS</p>
 
         <h2>Skills</h2>
 
