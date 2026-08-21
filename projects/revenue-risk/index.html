@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revenue Risk Analysis | Kaylin Lee</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0d1210;color:#f5f7f5;font-family:Arial,'Noto Sans KR',sans-serif}.wrap{width:min(1180px,90%);margin:auto;padding:70px 0 90px}.back{color:#8e9b95;text-decoration:none;font-size:13px}.eyebrow{margin-top:70px;color:#78cdb1;font-size:12px;font-weight:700;letter-spacing:.14em}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:end;margin:18px 0 50px}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1;letter-spacing:-3px;margin:0}.hero p{color:#aeb9b5;line-height:1.8;margin:0}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric,.panel{border:1px solid rgba(255,255,255,.11);background:#151c19}.metric{padding:24px;min-height:145px}.metric span,.label{color:#8e9b95;font-size:10px;font-weight:700;letter-spacing:.1em}.metric strong{display:block;font-size:38px;margin:15px 0 8px}.metric small{color:#78cdb1}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:14px}.panel{padding:28px}.panel h2{font-size:24px;margin:10px 0 24px}.bar-row{margin:18px 0}.bar-head{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px}.bar{height:9px;background:#29312e;border-radius:10px;overflow:hidden}.fill{height:100%;background:#78cdb1}.fill.mid{opacity:.65}.fill.low{opacity:.35}.risk-table{width:100%;border-collapse:collapse;font-size:12px}.risk-table th,.risk-table td{text-align:left;padding:13px 8px;border-bottom:1px solid rgba(255,255,255,.08)}.risk-table th{color:#8e9b95;font-size:10px}.high{color:#ff9f8e}.medium{color:#e6c77b}.low{color:#78cdb1}.note{margin-top:14px;color:#7f8d87;font-size:11px;line-height:1.6}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}.step{padding:22px;border:1px solid rgba(255,255,255,.1);background:#121815}.step b{color:#78cdb1;font-size:11px}.step h3{font-size:14px;margin:12px 0 8px}.step p{font-size:12px;color:#98a59f;line-height:1.6;margin:0}.section-title{margin:55px 0 16px;font-size:28px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}.tags span{border:1px solid rgba(255,255,255,.15);border-radius:30px;padding:8px 12px;font-size:11px;color:#bbc5c1}@media(max-width:850px){.hero,.grid{grid-template-columns:1fr}.metrics,.flow{grid-template-columns:1fr 1fr}}@media(max-width:520px){.metrics,.flow{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}}
+</style>
+</head>
+<body><main class="wrap">
+<a class="back" href="../../index.html">← Portfolio</a>
+<p class="eyebrow">PROJECT 03 · BUSINESS ANALYTICS</p>
+<div class="hero"><h1>Revenue<br>Risk Analysis</h1><p>프로젝트별 수주 확도와 매출 인식 계획을 기준으로 목표 달성 가능성을 나눠 보고, 어떤 프로젝트가 분기 실적의 리스크가 되는지 확인하는 분석입니다.</p></div>
+<div class="metrics">
+<div class="metric"><span>PIPELINE</span><strong>467억</strong><small>분석 대상 신규수주</small></div>
+<div class="metric"><span>CONFIRMED</span><strong>183억</strong><small>실행 가능 39%</small></div>
+<div class="metric"><span>MAX CASE</span><strong>415억</strong><small>△ 포함 최대 89%</small></div>
+<div class="metric"><span>AT RISK</span><strong>52.2억</strong><small>매출 인식 불가/위험</small></div>
+</div>
+<div class="grid">
+<section class="panel"><span class="label">SCENARIO VIEW</span><h2>실적 가능 범위</h2>
+<div class="bar-row"><div class="bar-head"><span>확정 가능</span><b>183억 · 39%</b></div><div class="bar"><div class="fill" style="width:39%"></div></div></div>
+<div class="bar-row"><div class="bar-head"><span>△ 포함 최대</span><b>415억 · 89%</b></div><div class="bar"><div class="fill mid" style="width:89%"></div></div></div>
+<div class="bar-row"><div class="bar-head"><span>전체 신규수주</span><b>467억 · 100%</b></div><div class="bar"><div class="fill low" style="width:100%"></div></div></div>
+<p class="note">단일 예상치보다 확정 / 가능 / 위험 구간을 나눠서 보는 데 초점을 맞췄습니다.</p></section>
+<section class="panel"><span class="label">RISK RULE</span><h2>프로젝트 분류</h2><table class="risk-table"><thead><tr><th>구분</th><th>판단 기준</th></tr></thead><tbody><tr><td class="low">LOW</td><td>확도와 매출 인식 시점이 안정적</td></tr><tr><td class="medium">MEDIUM</td><td>수주 가능성은 있으나 일정 변동 가능</td></tr><tr><td class="high">HIGH</td><td>확도 미달 또는 분기 내 인식 어려움</td></tr></tbody></table><p class="note">확도만 보지 않고 계약 진행상태와 매출 인식 시점을 함께 확인합니다.</p></section>
+</div>
+<h2 class="section-title">분석 흐름</h2><div class="flow"><div class="step"><b>01</b><h3>Project Data</h3><p>프로젝트별 계약금액, 예상 매출, 인식 월, 확도를 정리합니다.</p></div><div class="step"><b>02</b><h3>Risk Classification</h3><p>확도와 인식 가능 시점을 기준으로 프로젝트를 구분합니다.</p></div><div class="step"><b>03</b><h3>Scenario Analysis</h3><p>확정 Case와 가능 Case를 나눠 목표 대비 실적 범위를 봅니다.</p></div><div class="step"><b>04</b><h3>Action List</h3><p>금액 영향이 큰 위험 프로젝트를 먼저 확인할 수 있도록 정렬합니다.</p></div></div>
+<div class="tags"><span>Python</span><span>Excel</span><span>Business Analysis</span><span>Risk Analysis</span><span>Scenario Analysis</span></div>
+</main></body></html>
